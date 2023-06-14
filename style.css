@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    background-color: black;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+nav .navigation {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .navigation .logo {
+    height: 100%;
+    background: rgb(48, 144, 129);;
+    padding: 5px;
+}
+
+nav ul .logo i {
+    font-size: .7rem;
+}
+
+nav i {
+    color: #fff;
+    padding: 0 10px;
+}
+
+nav li {
+    list-style: none;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+nav  a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 5px;
+    font-size: .9rem;
+    font-weight: 00;
+}
+
+nav select {
+    background-color: black;
+    color: #fff;
+    border: none;
+    font-size: .9rem;
+    font-weight: 300;
+    outline: none;
+    cursor: pointer;
+}
+
+nav i {
+    padding: 10px;
+}
+
+#menu-close,
+#menu-btn {
+    display: none;
+}
+
+
+/* Home */
+#home {
+    background-image: url('images/bg.jpg');
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+}
+
+#home button {
+    margin: 15px 10px;
+}
+
+
+/* Team */
+#team {
+    text-align: center;
+    margin-top: 8vh;
+}
+
+#team h2 {
+    font-weight: 500;
+}
+
+#team p {
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+#team .members-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+#team .members-container .member img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+#team .members-container .member h3 {
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Our Work */
+
+#work {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    background: rgb(42, 39, 39);
+    margin-top: 40px;
+    padding: 7vh 2vh;
+}
+
+#work .intro {
+    color: white;
+    margin-top: 15px;
+}
+
+#work .intro h2  {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#work .intro p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+#work .customer-card {
+    background: #fff;
+}
+
+#work .customer-card  img{
+    width: 100%;
+    height: 250px;
+}
+
+#work .customer-card h3{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px;
+}
+
+#work .customer-card h4{
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0 10px;
+}
+
+#work .customer-card p  {
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 10px;
+}
+
+/* Contact Us */
+#contact-us {
+    background: rgb(240, 240, 240);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    padding: 8vh 2vh;
+    position: relative;
+}
+
+#contact-us .add {
+    background: rgb(48, 144, 129);;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    position: absolute;
+    right: 20px;
+    top: -20px;
+    cursor: pointer;
+
+}
+
+#contact-us .add i {
+    color: #fff;
+}
+
+#contact-us .info h2 {
+    display: inline-block;
+    border-bottom: 5px solid rgb(48, 144, 129);;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#contact-us .info h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+#contact-us .info .contact {
+    margin-top: 25px;
+}
+
+#contact-us .info i {
+    color: rgb(48, 144, 129);;
+}
+
+#contact-us .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 2vh 2vh;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#contact-us .form .inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-us .form .inputs input {
+    border: none;
+    border-bottom: 1px solid rgb(221, 218, 218);
+    outline: none;
+    margin-top: 15px;
+}
+
+
+#contact-us .form .inputs label {
+    margin-top: 15px;
+}
+
+#contact-us label {
+    font-weight: 500;
+}
+
+#contact-us .form .btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: black;
+    padding: 4vh;
+    position: relative;
+}
+
+footer .socials h3 {
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+footer .socials .social-links i {
+    color: white;
+    background-color: rgb(48, 144, 129);
+    width: 40px;
+    padding: 10px;
+}
+
+footer .up-btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-content: center;
+    background-color: black;
+    right: 15px;
+    top: -15px;
+}
+
+footer .up-btn i {
+    color: white;
+}
+
+/* Tablets and Mobile Phones */
+@media only screen and (max-width: 768px) {
+    #menu-btn {
+        display: initial;
+    }
+
+    #menu-close {
+        display: initial;
+        font-size: 1.6rem;
+        color: #fff;
+        padding: 30px 0 20px 20px;
+    }
+
+    #search-btn {
+        
+        display: none;
+    }
+
+    nav .navigation ul {
+        position: absolute;
+        top: 0;
+        right: -220px;
+        width: 220px;
+        height: 100vh;
+        background-color: rgba(48, 144, 129, 0.8);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transition: 0.3s ease;
+    }
+
+    nav .navigation ul.active {
+        right: 0;
+    }
+
+    nav .navigation ul li {
+        padding: 20px 0 20px 40px;
+        margin-left: 0;
+    }
+
+    nav select {
+        background-color: transparent;
+        padding: 20px 0 20px 40px;
+        margin-left: 0;
+    }
+
+    nav select .option {
+        color: black;
+    }
+
+    #team .members-container {
+        flex-wrap: wrap;
+    }
+
+    #team .members-container .member {
+        margin-top: 15px;
+    }
+
+    #work {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        background: rgb(42, 39, 39);
+        margin-top: 40px;
+        padding: 7vh 2vh;
+    }
+
+    #work .intro p {
+        margin-bottom: 15px;
+    }
+
+    #contact-us {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 8vh 2vh;
+        position: relative;
+    }
+
+   
+}
+
+
+
+
+
+

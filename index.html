@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talentera</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="navigation">
+            <div class="logo">
+                <i class="fa-sharp fa-solid fa-house-chimney"></i>
+                <a href="#">Logo</a>
+            </div>
+            <ul>
+                <i class="fas fa-times" id="menu-close"></i>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Price</a></li>
+                <li><a href="#">Contact</a></li>
+                <select name="dropdown">
+                    <option value="dropdown" selected disabled>Dropdown</option>
+                    <option value="services" class="option">Services</option>
+                    <option value="products" class="option">Products</option>
+                    <option value="about" class="option">About</option>
+                  </select>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" id="menu-btn"></i>
+        <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+        <button>Talentera</button>
+    </section>
+
+    <!-- Team -->
+    <section id="team">
+        <h2>OUR TEAM</h2>
+        <p>Meet the team - our office rats:</p>
+        <div class="members-container">
+            <div class="member">
+                <img src="images/male.jpg" alt="">
+                <h3>Islam AlZatary</h3>
+                <p>Web Designer</p>
+            </div>
+            <div class="member">
+                <img src="images/male.jpg" alt="">
+                <h3>Tayseer Emam</h3>
+                <p>Support</p>
+            </div>
+            <div class="member">
+                <img src="images/female.jpg" alt="">
+                <h3>Eman Subhi</h3>
+                <p>Boss man</p>
+            </div>
+            <div class="member">
+                <img src="images/female.jpg" alt="">
+                <h3>Reem Yakoub</h3>
+                <p>Fixer</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Work -->
+    <section id="work">
+        <div class="intro">
+            <h2>Our Work</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, ea eaque vitae ex, at ullam mollitia nam suscipit sunt amet voluptates animi, esse iure soluta molestiae totam quasi nemo maxime aut sapiente debitis eius? Cupiditate sit iusto nobis eum voluptatem blanditiis laboriosam reiciendis sunt et provident earum tempore obcaecati iste, doloribus placeat debitis minima nihil alias! Nostrum ex asperiores iusto eligendi, corrupti molestias blanditiis consequuntur repellendus inventore optio maxime odit incidunt accusantium ducimus atque, perferendis eos consectetur, amet laborum? Aspernatur!</p>
+        </div>
+        <div class="customer-card">
+            <img src="images/card1.jpg" alt="">
+            <h3>Customer 1</h3>
+            <h4>Trade</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus deleniti nisi tenetur delectus dignissimos amet. Temporibus corrupti fugiat, eum quam architecto exercitationem aspernatur accusamus debitis impedit eaque quaerat nesciunt accusantium?</p>
+        </div>
+        <div class="customer-card">
+            <img src="images/card2.jpg" alt="">
+            <h3>Customer 2</h3>
+            <h4>Trade</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus deleniti nisi tenetur delectus dignissimos amet. Temporibus corrupti fugiat, eum quam architecto exercitationem aspernatur accusamus debitis impedit eaque quaerat nesciunt accusantium?</p>
+        </div>
+        <div class="customer-card">
+            <img src="images/card3.jpg" alt="">
+            <h3>Customer 3</h3>
+            <h4>Trade</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus deleniti nisi tenetur delectus dignissimos amet. Temporibus corrupti fugiat, eum quam architecto exercitationem aspernatur accusamus debitis impedit eaque quaerat nesciunt accusantium?</p>
+        </div>
+        
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact-us">
+        <div class="add">
+            <i class="fa-regular fa-plus"></i>
+        </div>
+        <div class="info">
+            <h2>Contact Us</h2>
+            <h3>Address</h3>
+            <p>Swing by for a cup of coffee, or whatever</p>
+            <div class="contact">
+                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                <span>Amman, Jordan</span>
+            </div>
+            <div class="contact">
+                <i class="fa-solid fa-phone"></i>
+                <span>+962 79 0000000</span>
+            </div>
+            <div class="contact">
+                <i class="fa-regular fa-envelope"></i>
+                <span>test@test.com</span>
+            </div>
+        </div>
+        <div class="form">
+            <div class="inputs">
+                <label for="name"> Name </label>
+                <input type="text" id="name">
+                <label for="email"> Email </label>
+                <input type="text" id="email">
+                <label for="message"> Message </label>
+                <input type="text" id="message">
+            </div>
+            <div class="btns">
+                <div class="checkbox">
+                    <input type="checkbox" id="box">
+                    <label for="box">I Like it!</label>
+                </div>
+                <button>Send</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="up-btn">
+            <i class="fa-sharp fa-solid fa-circle-chevron-up"></i>
+        </div>
+        <div class="socials">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-google-plus-g"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- open and close nav menu -->
+    <script>
+        const menuBtn =  document.getElementById("menu-btn");
+        menuBtn.addEventListener('click', () =>  {
+                 document.querySelector('nav .navigation ul').classList.add('active');
+             
+        });
+        const btnClose =  document.getElementById("menu-close");
+        btnClose.addEventListener('click', function() {
+            if (document.querySelector('nav .navigation ul.active') !== null) {
+                 document.querySelector('nav .navigation ul.active').classList.remove('active');
+             }
+        });
+      </script>
+</body>
+</html>
